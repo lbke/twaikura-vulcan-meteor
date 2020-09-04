@@ -200,7 +200,7 @@ input SingleUserInput {
   id: String
 
   # backwards-compatibility
-  "Deprecated (use 'filter/id' fields instead)."
+  # Deprecated (use 'filter/id' fields instead).
   selector: UserSelectorUniqueInput
 
   # options (backwards-compatibility)
@@ -223,7 +223,7 @@ input MultiUserInput {
 
   # backwards-compatibility
   # A JSON object that contains the query terms used to fetch data
-  "Deprecated (use 'filter/id' fields instead)."
+  # Deprecated (use 'filter/id' fields instead).
   terms: JSON
 
   # options (backwards-compatibility)
@@ -233,7 +233,7 @@ input MultiUserInput {
   enableTotal: Boolean
   # An identifier to name the query's execution context
   contextName: String
-  
+
 }
 
 type SingleUserOutput{
@@ -371,7 +371,7 @@ input SingleTweekInput {
   id: String
 
   # backwards-compatibility
-  "Deprecated (use 'filter/id' fields instead)."
+  # Deprecated (use 'filter/id' fields instead).
   selector: TweekSelectorUniqueInput
 
   # options (backwards-compatibility)
@@ -394,7 +394,7 @@ input MultiTweekInput {
 
   # backwards-compatibility
   # A JSON object that contains the query terms used to fetch data
-  "Deprecated (use 'filter/id' fields instead)."
+  # Deprecated (use 'filter/id' fields instead).
   terms: JSON
 
   # options (backwards-compatibility)
@@ -404,7 +404,7 @@ input MultiTweekInput {
   enableTotal: Boolean
   # An identifier to name the query's execution context
   contextName: String
-  
+
 }
 
 type SingleTweekOutput{
@@ -509,7 +509,7 @@ input SingleTwaikInput {
   id: String
 
   # backwards-compatibility
-  "Deprecated (use 'filter/id' fields instead)."
+  # Deprecated (use 'filter/id' fields instead).
   selector: TwaikSelectorUniqueInput
 
   # options (backwards-compatibility)
@@ -532,7 +532,7 @@ input MultiTwaikInput {
 
   # backwards-compatibility
   # A JSON object that contains the query terms used to fetch data
-  "Deprecated (use 'filter/id' fields instead)."
+  # Deprecated (use 'filter/id' fields instead).
   terms: JSON
 
   # options (backwards-compatibility)
@@ -542,7 +542,7 @@ input MultiTwaikInput {
   enableTotal: Boolean
   # An identifier to name the query's execution context
   contextName: String
-  
+
 }
 
 type SingleTwaikOutput{
@@ -671,96 +671,96 @@ type Mutation {
   # Mutation for creating new User documents
   createUser(
   input: CreateUserInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   data: CreateUserDataInput
 ) : UserMutationOutput
 
   # Mutation for updating a User document
   updateUser(
   input: UpdateUserInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: UserSelectorUniqueInput,
-  "Deprecated (use 'input' field instead)."
-  data: UpdateUserDataInput 
+  # Deprecated (use 'input' field instead).
+  data: UpdateUserDataInput
 ) : UserMutationOutput
 
   # Mutation for upserting a User document
   upsertUser(
   input: UpsertUserInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: UserSelectorUniqueInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   data: UpdateUserDataInput
 ) : UserMutationOutput
 
   # Mutation for deleting a User document
   deleteUser(
   input: DeleteUserInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: UserSelectorUniqueInput
 ) : UserMutationOutput
 
   # Mutation for creating new Tweek documents
   createTweek(
   input: CreateTweekInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   data: CreateTweekDataInput
 ) : TweekMutationOutput
 
   # Mutation for updating a Tweek document
   updateTweek(
   input: UpdateTweekInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: TweekSelectorUniqueInput,
-  "Deprecated (use 'input' field instead)."
-  data: UpdateTweekDataInput 
+  # Deprecated (use 'input' field instead).
+  data: UpdateTweekDataInput
 ) : TweekMutationOutput
 
   # Mutation for upserting a Tweek document
   upsertTweek(
   input: UpsertTweekInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: TweekSelectorUniqueInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   data: UpdateTweekDataInput
 ) : TweekMutationOutput
 
   # Mutation for deleting a Tweek document
   deleteTweek(
   input: DeleteTweekInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: TweekSelectorUniqueInput
 ) : TweekMutationOutput
 
   # Mutation for creating new Twaik documents
   createTwaik(
   input: CreateTwaikInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   data: CreateTwaikDataInput
 ) : TwaikMutationOutput
 
   # Mutation for updating a Twaik document
   updateTwaik(
   input: UpdateTwaikInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: TwaikSelectorUniqueInput,
-  "Deprecated (use 'input' field instead)."
-  data: UpdateTwaikDataInput 
+  # Deprecated (use 'input' field instead).
+  data: UpdateTwaikDataInput
 ) : TwaikMutationOutput
 
   # Mutation for upserting a Twaik document
   upsertTwaik(
   input: UpsertTwaikInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: TwaikSelectorUniqueInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   data: UpdateTwaikDataInput
 ) : TwaikMutationOutput
 
   # Mutation for deleting a Twaik document
   deleteTwaik(
   input: DeleteTwaikInput,
-  "Deprecated (use 'input' field instead)."
+  # Deprecated (use 'input' field instead).
   selector: TwaikSelectorUniqueInput
 ) : TwaikMutationOutput
 
