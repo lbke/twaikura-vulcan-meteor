@@ -351,6 +351,8 @@ input UserSelectorUniqueInput {
 type Tweek {
   _id: String 
   createdAt: Date 
+  userId: String 
+  user: User 
   text: String 
   twaikId: String 
   twaik: Twaik 
@@ -460,6 +462,7 @@ input TweekFilterInput {
 
   _id: String_Selector
   createdAt: Date_Selector
+  userId: String_Selector
   text: String_Selector
   twaikId: String_Selector
 }
@@ -467,6 +470,7 @@ input TweekFilterInput {
 input TweekSortInput {
   _id: SortOptions
   createdAt: SortOptions
+  userId: SortOptions
   text: SortOptions
   twaikId: SortOptions
 }
@@ -489,6 +493,8 @@ input TweekSelectorUniqueInput {
 type Twaik {
   _id: String 
   createdAt: Date 
+  userId: String 
+  user: User 
   text: String 
   tweekId: String 
   tweek: Tweek 
@@ -598,6 +604,7 @@ input TwaikFilterInput {
 
   _id: String_Selector
   createdAt: Date_Selector
+  userId: String_Selector
   text: String_Selector
   tweekId: String_Selector
 }
@@ -605,6 +612,7 @@ input TwaikFilterInput {
 input TwaikSortInput {
   _id: SortOptions
   createdAt: SortOptions
+  userId: SortOptions
   text: SortOptions
   tweekId: SortOptions
 }
